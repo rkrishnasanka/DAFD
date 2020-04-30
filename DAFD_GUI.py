@@ -1,12 +1,12 @@
 """A graphical interface to DAFD that does not require website hosting"""
-from core_logic.ForwardModel import ForwardModel
-from core_logic.InterModel import InterModel
-from helper_scripts.ModelHelper import ModelHelper
+from .core_logic.ForwardModel import ForwardModel
+from .core_logic.InterModel import InterModel
+from .helper_scripts.ModelHelper import ModelHelper
 import tkinter
 from PIL import ImageTk, Image
 from tkinter import ttk
 import tkinter.messagebox
-from bin.DAFD_Interface import DAFD_Interface
+from .bin.DAFD_Interface import DAFD_Interface
 
 class DAFD_GUI:
 	"""A class that produces a windowed interface for DAFD"""
@@ -158,6 +158,8 @@ class DAFD_GUI:
 					desired_vals[param_name] = wanted_val
 
 		# Return and display the results
+		print("Desired Values Dictionary:", desired_vals)
+		print("Constraints Dictionary:", constraints)
 		results = self.di.runInterp(desired_vals,constraints)
 		print(self.di.runForward(results))
 		self.results_label["text"] = "\n".join([x + " : " + str(results[x]) for x in self.di.input_headers])

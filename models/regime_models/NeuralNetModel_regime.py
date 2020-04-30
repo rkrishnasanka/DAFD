@@ -20,7 +20,7 @@ import sys
 from sklearn.neural_network import MLPRegressor
 import numpy as np
 import os
-from helper_scripts.ModelHelper import ModelHelper
+from ... helper_scripts.ModelHelper import ModelHelper
 import sklearn
 
 

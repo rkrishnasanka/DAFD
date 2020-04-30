@@ -1,6 +1,6 @@
-from helper_scripts.ModelHelper import ModelHelper
-from core_logic.RegimeClassifier import RegimeClassifier
-from core_logic.Regressor import Regressor
+from .. helper_scripts.ModelHelper import ModelHelper
+from .. core_logic.RegimeClassifier import RegimeClassifier
+from .. core_logic.Regressor import Regressor
 
 
 class ForwardModel:

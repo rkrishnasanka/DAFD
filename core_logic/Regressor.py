@@ -1,8 +1,8 @@
-from models.forward_models.NeuralNetModel_rate1 import NeuralNetModel_rate1
-from models.forward_models.NeuralNetModel_rate2 import NeuralNetModel_rate2
-from models.forward_models.NeuralNetModel_size1 import NeuralNetModel_size1
-from models.forward_models.NeuralNetModel_size2 import NeuralNetModel_size2
-from helper_scripts.ModelHelper import ModelHelper
+from .. models.forward_models.NeuralNetModel_rate1 import NeuralNetModel_rate1
+from .. models.forward_models.NeuralNetModel_rate2 import NeuralNetModel_rate2
+from .. models.forward_models.NeuralNetModel_size1 import NeuralNetModel_size1
+from .. models.forward_models.NeuralNetModel_size2 import NeuralNetModel_size2
+from .. helper_scripts.ModelHelper import ModelHelper
 import numpy as np
 import sklearn.metrics
 
