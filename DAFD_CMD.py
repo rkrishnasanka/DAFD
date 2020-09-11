@@ -2,7 +2,7 @@
 
 import sys
 import os
-from .bin.DAFD_Interface import DAFD_Interface
+from dafd.bin.DAFD_Interface import DAFD_Interface
 
 di = DAFD_Interface()
 

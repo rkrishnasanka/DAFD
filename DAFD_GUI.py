@@ -1,12 +1,12 @@
 """A graphical interface to DAFD that does not require website hosting"""
-from .core_logic.ForwardModel import ForwardModel
-from .core_logic.InterModel import InterModel
-from .helper_scripts.ModelHelper import ModelHelper
+from dafd.core_logic.ForwardModel import ForwardModel
+from dafd.core_logic.InterModel import InterModel
+from dafd.helper_scripts.ModelHelper import ModelHelper
 import tkinter
 from PIL import ImageTk, Image
 from tkinter import ttk
 import tkinter.messagebox
-from .bin.DAFD_Interface import DAFD_Interface
+from dafd.bin.DAFD_Interface import DAFD_Interface
 
 class DAFD_GUI:
 	"""A class that produces a windowed interface for DAFD"""

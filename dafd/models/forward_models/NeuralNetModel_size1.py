@@ -20,7 +20,7 @@ import sys
 from sklearn.neural_network import MLPRegressor
 import numpy as np
 import os
-from ... helper_scripts.ModelHelper import ModelHelper
+from dafd.helper_scripts.ModelHelper import ModelHelper
 import sklearn
 
 
@@ -51,7 +51,7 @@ def r_square_loss(y_true, y_pred):
 	return 1 - ( 1 - SS_res/(SS_tot + K.epsilon()))
 
 
-class NeuralNetModel_rate2:
+class NeuralNetModel_size1:
 
 	regression_model = None
 

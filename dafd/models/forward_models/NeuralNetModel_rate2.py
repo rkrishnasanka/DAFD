@@ -20,7 +20,7 @@ import sys
 from sklearn.neural_network import MLPRegressor
 import numpy as np
 import os
-from ... helper_scripts.ModelHelper import ModelHelper
+from dafd.helper_scripts.ModelHelper import ModelHelper
 import sklearn
 
 
@@ -51,7 +51,7 @@ def r_square_loss(y_true, y_pred):
 	return 1 - ( 1 - SS_res/(SS_tot + K.epsilon()))
 
 
-class NeuralNetModel_rate1:
+class NeuralNetModel_rate2:
 
 	regression_model = None
 
@@ -63,11 +63,11 @@ class NeuralNetModel_rate1:
 		self.regression_model = Sequential()
 
 		# Adding the input layer and the first hidden layer
-		self.regression_model.add(Dense(32, activation='relu', input_dim=8))
+		self.regression_model.add(Dense(16, activation='relu', input_dim=8))
 
 		# Adding the second hidden layer
 		self.regression_model.add(Dense(units=16, activation='relu'))
-		# self.regression_model.add(Dropout(0.1))
+		# model.add(Dropout(0.1))
 		# Adding the third hidden layer
 		# model.add(Dense(units = 32, activation = 'relu'))
 		# model.add(Dropout(0.1))
@@ -95,7 +95,7 @@ class NeuralNetModel_rate1:
 
 		# Fitting the NN to the Training set
 		# 20, 500 for all others
-		self.regression_model.fit(train_features, train_labels, batch_size = 10, epochs = 400, callbacks=[earlystopping],verbose=0)#
+		self.regression_model.fit(train_features, train_labels, batch_size = 20, epochs = 400, callbacks=[earlystopping],verbose=0)#
 
 		# serialize model to JSON
 		model_json = self.regression_model.to_json()
