@@ -53,8 +53,8 @@ class Regressor:
 		#print(train_labels)
 		#print()
 		#print(train_features)
-		print("R square (R^2) for Train:                 %f" % sklearn.metrics.r2_score(train_labels, self.regression_model.regression_model.predict(train_features)))
-		print()
+		# print("R square (R^2) for Train:                 %f" % sklearn.metrics.r2_score(train_labels, self.regression_model.regression_model.predict(train_features)))
+		# print()
 
 
 	def predict(self,features):

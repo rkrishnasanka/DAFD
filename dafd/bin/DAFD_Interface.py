@@ -3,12 +3,12 @@ from dafd.core_logic.ForwardModel import ForwardModel
 from dafd.core_logic.InterModel import InterModel
 from dafd.helper_scripts.ModelHelper import ModelHelper
 
-
 class DAFD_Interface:
 	"""A class that provides an interface for DAFD"""
 
 	def __init__(self):
-		self.it = InterModel()
+
+		self.it = InterModel(True)
 		self.fw = self.it.fwd_model
 
 		self.MH = ModelHelper.get_instance() # type: ModelHelper

@@ -26,8 +26,8 @@ class RegimeClassifier:
 
 		train_features = np.stack(self.MH.train_features_dat_wholenorm)
 		train_labels = np.stack(self.MH.train_regime_dat)
-		print("Train accuracy: " + str(sklearn.metrics.accuracy_score(train_labels-1,self.neuralnet.classifier_model.predict_classes(train_features))))
-		print()
+		# print("Train accuracy: " + str(sklearn.metrics.accuracy_score(train_labels-1,self.neuralnet.classifier_model.predict_classes(train_features))))
+		# print()
 
 	def predict(self,features):
 		return self.neuralnet.predict(features)

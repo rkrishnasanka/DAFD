@@ -32,10 +32,10 @@ class InterModel:
 	This class handles interpolation over our forward models to make the reverse predictions
 	"""
 
-	def __init__(self):
+	def __init__(self, regenerate_classifiers = True):
 		"""Make and save the interpolation models"""
 		self.MH = ModelHelper.get_instance() # type: ModelHelper
-		self.fwd_model = ForwardModel()
+		self.fwd_model = ForwardModel(regenerate_classifiers)
 
 
 	def get_closest_point(self, desired_vals, constraints={}, max_drop_exp_error=-1, skip_list = []):
