@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "DAFD"
-version = "0.1.0"
-description = ""
+version = "0.1.1"
+description = "Python package for the library for DAFD."
 authors = ["Radhakrishna Sanka <rkrishnasanka@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "3.8"
+python = "^3.8"
 keras = "^2.4.3"
 tensorflow = "^2.3.0"
 scikit-learn = "^0.23.2"
