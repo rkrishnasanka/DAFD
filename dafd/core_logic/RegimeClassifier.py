@@ -1,5 +1,5 @@
-from .. models.regime_models.NeuralNetModel_regime import NeuralNetModel_regime
-from .. helper_scripts.ModelHelper import ModelHelper
+from dafd.models.regime_models.NeuralNetModel_regime import NeuralNetModel_regime
+from dafd.helper_scripts.ModelHelper import ModelHelper
 import sklearn.metrics
 import numpy as np
 

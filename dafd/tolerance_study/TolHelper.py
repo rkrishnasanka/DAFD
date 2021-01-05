@@ -1,5 +1,5 @@
-from bin.DAFD_Interface import DAFD_Interface
-from tolerance_study.plot_utils import *
+from dafd.bin.DAFD_Interface import DAFD_Interface
+from dafd.tolerance_study.plot_utils import *
 import os
 import pickle
 #TODO: Include package handling in correct files

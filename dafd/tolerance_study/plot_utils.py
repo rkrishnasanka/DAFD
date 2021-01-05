@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
-from tolerance_study.tol_utils import *
+from dafd.tolerance_study.tol_utils import *
 
 
 def plot_results(outputs, original, tolerance):
